@@ -29,6 +29,18 @@ export default class extends React.Component {
         })
     }
 
+    things() {
+        let things = []
+        for(let i=0;i<400;i+=1) {
+            things.push(
+                <Entity gltf-model="/static/models/imp/scene.gltf" position={{x: -200+i, y: 1, z: -1}} 
+                        rotation="0 -360 0"
+                        animation__yoyo={{property: 'rotation', dur: 1000+Math.random()*4000, loop: true, to: '0 360 0'}}/>
+            )
+        }
+        return things
+    }
+
     render() {
         return (
             <div style={{height: '100%', width: '100%'}}>
@@ -38,22 +50,14 @@ export default class extends React.Component {
                         <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg" />
                         <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg" />
                     </a-assets>
-
+                    
                     <Entity primitive="a-plane" src="#groundTexture" rotation="-90 0 0" height="100" width="100"/>
                     <Entity primitive="a-light" type="ambient" color="#445451"/>
                     <Entity primitive="a-light" type="point" intensity="2" position="2 4 4"/>
                     <Entity primitive="a-sky" height="2048" radius="30" src="#skyTexture" theta-length="90" width="2048"/>
                     <Entity particle-system={{preset: 'snow', particleCount: 2000}}/>
                     <Entity text={{value: 'Hello, A-Frame React!', align: 'center'}} position={{x: 0, y: 2, z: -1}}/>
-                    <Entity gltf-model="/static/models/cacodemon/scene.gltf" position={{x: -3, y: 3, z: -1}}
-                        rotation="-90 0 0"
-                        animation__yoyo={{property: 'rotation', dur: 2000, loop: true, to: '-90 360 0'}}/>
-                    <Entity gltf-model="/static/models/cacodemon/scene.gltf" position={{x: 0, y: 3, z: -1}}
-                        rotation="-90 0 0"
-                        animation__yoyo={{property: 'rotation', dur: 3000, loop: true, to: '-90 360 0'}}/>
-                    <Entity gltf-model="/static/models/cacodemon/scene.gltf" position={{x: 3, y: 3, z: -1}}
-                        rotation="-90 0 0"
-                        animation__yoyo={{property: 'rotation', dur: 4000, loop: true, to: '-90 360 0'}}/>
+                    { this.things() }
                     <Entity id="box"
                     geometry={{primitive: 'box'}}
                     material={{color: this.state.color, opacity: 0.6}}
