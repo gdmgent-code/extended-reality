@@ -903,6 +903,20 @@ acorn@^5.0.0, acorn@^5.2.1, acorn@^5.6.2:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.7.3.tgz#67aa231bf8812974b85235a96771eb6bd07ea279"
   integrity sha512-T/zvzYRfbVojPWahDsE5evJdHb3oJoQfFbsrKM7w5Zcs++Tr257tia3BmMP8XYVjp1S9RZXQMh7gao96BlqZOw==
 
+aframe-animation-component@^5.1.2:
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/aframe-animation-component/-/aframe-animation-component-5.1.2.tgz#f08becfcde91b0c9d2bf308b03cbdacd85c320d0"
+  integrity sha512-DGUsRGB6TaN0rRKGYRrU0M1eblhpnMMYR1Vhulh0d5TxQRNszWJ5I1aHB/YW6wcj0gO89hLabSe5Is5NFpUeGg==
+  dependencies:
+    animejs "2.2.0"
+
+aframe-extras@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/aframe-extras/-/aframe-extras-5.0.1.tgz#cbd5ee5faa78ac62ad0a41bc0de6133f0735d6e0"
+  integrity sha512-ZHCfBXFiPXAQv+O/3Ih/9+GdzYyZOEizQDKByA0FJQwKk0Ruc/v5+LpN+eOxaymUHbFTdgkOm4MOwVfZtHXvTg==
+  dependencies:
+    three-pathfinding "^0.7.0"
+
 aframe-particle-system-component@^1.1.3:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/aframe-particle-system-component/-/aframe-particle-system-component-1.1.3.tgz#9d05732fab223e8c4392d20ae47bb29fa97067e9"
@@ -962,6 +976,11 @@ an-array@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/an-array/-/an-array-1.0.0.tgz#c125a5bb8257778e35f4b4f6aa9c7d0fa9e42665"
   integrity sha1-wSWlu4JXd4419LT2qpx9D6nkJmU=
+
+animejs@2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/animejs/-/animejs-2.2.0.tgz#35eefdfc535b81949c9cb06f0b3e60c02e6fdc80"
+  integrity sha1-Ne79/FNbgZScnLBvCz5gwC5v3IA=
 
 ansi-colors@^3.0.0:
   version "3.2.3"
@@ -6076,6 +6095,11 @@ three-buffer-vertex-data@^1.0.0:
   integrity sha1-zyKOeEJ2ZYhLlhpMq+H4XtOfgrE=
   dependencies:
     flatten-vertex-data "^1.0.0"
+
+three-pathfinding@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/three-pathfinding/-/three-pathfinding-0.7.0.tgz#bf64ec409bee6e7d8e19be96c7b40ebd7ef6f10d"
+  integrity sha512-UwWvzgio1UFe81n5jKHNzB4B+AG3wfZ54OKp7bTb1MHuC3cy6RTtr0dbbiPQQoqxzr+DRArR2DUwQSEknw5+nw==
 
 "three@github:supermedium/three.js#r90fixMTLLoader":
   version "0.90.0"
